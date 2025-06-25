@@ -374,9 +374,68 @@ vertical-align: middle;
 #setting .content select option{
     z-index: 21;
 }
+.lab-radio{
+    padding-block: 40px;
+}
 .radios{
-    width: 40%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.radios span{
+    padding-right: 50px;
+}
+.Time-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+
+.Time-check input[type="radio"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #546FFF;
+  border-radius: 50%;
+  position: relative;
+  background-color: #fff;
+}
+
+
+.Time-check input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #546FFF;
+  border-radius: 50%;
+}
+.Time-check input[type="radio"]:checked + span {
+  font-weight: bold;
+  color: #546FFF;
+}
+
+.Time-check:has(input[type="radio"]:checked) {
+  border-color: #546fff;
+  background-color: #f5faff;
+}
+#setting button{
+    border: none;
+    font-size: 14px;
+    padding: 10px 50px;
+    color: #FFFFFF;
+    background-color: #546FFF;
+    border-radius: 10px;
+    margin-top: 20px;
 }
