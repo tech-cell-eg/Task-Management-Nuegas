@@ -111,3 +111,34 @@ plugins: [{
   }
 }]
     });
+    //nav bar
+  
+ const links = document.querySelectorAll('.nav-menu a');
+const pages = document.querySelectorAll('#home, #message, #setting, #task, #mentors');
+const calendar = document.getElementById('calendar-column');
+
+links.forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const targetId = this.dataset.target;
+
+    // Hide all pages
+    pages.forEach(page => page.style.display = 'none');
+
+    // Show target page
+    const target = document.getElementById(targetId);
+    if (target) target.style.display = 'block';
+
+    // Show calendar only on home
+    calendar.style.display = (targetId === 'home') ? 'block' : 'none';
+
+    // Active menu styling
+    document.querySelectorAll('.nav-menu li').forEach(li => li.classList.remove('active'));
+    this.parentElement.classList.add('active');
+  });
+});
+
+
+ 
+
+
