@@ -384,4 +384,10 @@ vertical-align: middle;
 .custom-start-10 { right: 10%; }
 .custom-start-0  { right: 0; }
 
- 
+/* ============= Start Message ============= */
+.search-bar{
+    border:2px lightcoral bold;
+   
+  
+}
+/* ============= end Messag3e ============= */
