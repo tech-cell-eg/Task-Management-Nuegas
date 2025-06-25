@@ -385,9 +385,57 @@ vertical-align: middle;
 .custom-start-0  { right: 0; }
 
 /* ============= Start Message ============= */
-.search-bar{
-    border:2px lightcoral bold;
-   
-  
+  .search-bar {
+    position: relative;
+    width: 100%;
+    border:2px #F5F5F7 solid;
+  }
+
+  .search-bar input {
+    padding-right: 2.5rem; /* Space for the icon */
+  }
+
+  .search-bar i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  .message-container {
+  max-width: 500px;
+  margin: 0 auto;
 }
+
+.message {
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.message:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-left-color: #2e86de;
+}
+
+.badge {
+  font-size: 0.65rem;
+  padding: 0.35em 0.65em;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+.fw-bold {
+  font-weight: 600 !important;
+}
+
+.rounded-4 {
+  border-radius: 12px !important;
+}
+.messages .icons span{
+    
+}
+
 /* ============= end Messag3e ============= */
