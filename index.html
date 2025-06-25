@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-   <div class="container">
+<body class="bg-custom-light">
+   <div class="container-fluid">
     <div class="row">
          <!-- ================   Navbar   ================ -->
         <div class="col-md-2">
@@ -69,7 +69,7 @@
 
         </div>
       <!-- ================   Home   ================ -->
-       <div class="col-md-6">
+       <div class="col-md-7">
         <div id="home">
         <div class="title">
             <div class="title-content">
@@ -118,7 +118,136 @@
        </div>
 
        <!-- ================   Calender   ================ -->
-        <div class="col-md-4"></div>
+          <div class="col-md-3 p-3 " style="height: 100vh">
+          <div class="one p-4 bg-white mb-4 rounded-4">
+            <div class="my-3 d-flex justify-content-between align-items-center">
+              <img src="images/arrow-left.png" alt="left" />
+              <span class="fw-semibold">July 2024</span>
+              <img src="images/arrow-right (1).png" alt="right" />
+            </div>
+          <div class="d-flex justify-content-between text-center">
+  <div>
+    <div class="  fw-bold">S</div>
+    <div class="py-2 mt-2 px-3 rounded-circle bg-custom-light">30</div>
+  </div>
+  <div>
+    <div class="  fw-bold">M</div>
+    <div class="py-2 mt-2 px-3 rounded-circle bg-custom-light">1</div>
+  </div>
+  <div>
+    <div class="  fw-bold">T</div>
+    <div class="py-2 mt-2 px-3 rounded-circle bg-custom-light">2</div>
+  </div>
+  <div>
+    <div class="  fw-bold">W</div>
+    <div class="py-2 mt-2 px-3 rounded-circle bg-custom-light">3</div>
+  </div>
+  <div class="rounded-pill  bg-black p-1">
+    <div class="text-white  fw-bold">T</div>
+    <div class="py-2 mt-2 px-3 rounded-circle bg-primary">4</div>
+  </div>
+  <div>
+    <div class="  fw-bold">F</div>
+    <div class="py-2 mt-2 px-3 rounded-circle bg-custom-light">5</div>
+  </div>
+  <div>
+    <div class="  fw-bold">S</div>
+    <div class="py-2 mt-2 px-3 rounded-circle bg-custom-light">6</div>
+  </div>
+</div>
+
+          </div>
+
+          <div class="second p-4 bg-white rounded-4">
+            <div
+              class="d-flex justify-content-between align-items-center mb-3 text-black"
+            >
+              <h6 class="mb-0">Task Today</h6>
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+
+            <div class="card border-0">
+              <img
+                src="images/rightImage.jpg"
+                class="card-img-top w-100 rounded-3 h-160"
+                alt="right image"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">
+                  Creating Awesome Mobile Apps
+                </h5>
+                <p class="text-secondary mb-2">UI/UX Designer</p>
+
+                <div
+                  class="d-flex justify-content-between align-items-center mb-1"
+                >
+                  <h6 class="mb-0">Progress</h6>
+                  <h6 class="mb-0 text-primary">90%</h6>
+                </div>
+<div class="progress my-2 custom-progress  " 
+     role="progressbar"
+     aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar bg-primary rounded-2" style="width: 90%;"></div>
+  <span class="progress-dot position-relative"></span>
+</div>
+
+
+
+
+                <div class="d-flex   justify-content-between mb-3 text-secondary  ">
+                  <div>
+                          <i class="fa-regular fa-clock fs-5 me-2"></i>
+                  <span>1 Hour</span>
+                  </div>
+              <div class="position-relative  image-stack">
+  <img src="images/Photo 4.png" alt="" class="layer-img z-1 custom-start-40" />
+  <img src="images/Photo 2.png" alt="" class="layer-img z-2 custom-start-30" />
+  <img src="images/Photo 1.png" alt="" class="layer-img z-3 custom-start-20" />
+  <img src="images/Photo 5.png" alt="" class="layer-img z-4 custom-start-10" />
+  <img src="images/Photo 3.png" alt="" class="layer-img z-5 custom-start-0" />
+</div>
+
+                   
+                </div>
+
+                <hr class="border border-secondary-subtle my-3" />
+
+                <div class="d-flex justify-content-between mb-3">
+                  <h5 class="fw-bold mb-0">Detail Task</h5>
+                  <p class="text-secondary mb-0">UI/UX Designer</p>
+                </div>
+
+                <div class="items pb-4">
+                  <div class="item d-flex align-items-center mb-2">
+                    <p class="px-3 py-2 bg-custom-light rounded-3 me-2 mb-0">
+                      1
+                    </p>
+                    <p class="mb-0">Understanding the tools in Figma</p>
+                  </div>
+                  <div class="item d-flex align-items-center mb-2">
+                    <p class="px-3 py-2 bg-custom-light rounded-3 me-2 mb-0">
+                      2
+                    </p>
+                    <p class="mb-0">
+                      Understanding the basics of making design
+                    </p>
+                  </div>
+                  <div class="item d-flex align-items-center mb-3">
+                    <p class="px-3 py-2 bg-custom-light rounded-3 me-2 mb-0">
+                      3
+                    </p>
+                    <p class="mb-0">Design a mobile application with Figma</p>
+                  </div>
+                </div>
+
+                <a href="#" class="btn btn-primary w-100 rounded-3"
+                  >Go To Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
    </div>
 

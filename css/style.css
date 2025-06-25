@@ -323,3 +323,65 @@ vertical-align: middle;
 
 
 /* ============= End Setting =============== */
+ .w-95{
+    width: 95%;
+ }
+ .bg-custom-light {
+  background-color: #f5f5f7;
+}
+.h-160{
+    height: 160px;
+    width: 320px;
+}
+ .image-stack {
+  width: 50%;
+ 
+ }
+.custom-progress {
+  overflow: visible; 
+  
+}
+
+ 
+ 
+.progress-dot {
+  position: relative;
+  width:20px;  
+  height:20px;
+  background-color: hsl(216, 82%, 50%);  
+  border-radius: 50%;
+  border-color: white;
+  z-index: 2;  
+  top:-2px;
+  transform: translate(-50%, 0); 
+}
+
+
+ 
+@media (max-width: 576px) {
+  .progress-dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+.layer-img {
+  position: absolute;
+ 
+}
+
+ 
+.z-1 { z-index: 1; }
+.z-2 { z-index: 2; }
+.z-3 { z-index: 3; }
+.z-4 { z-index: 4; }
+.z-5 { z-index: 5; }
+
+ 
+.custom-start-40 { right: 40%; }
+.custom-start-30 { right: 30%; }
+.custom-start-20 { right: 20%; }
+.custom-start-10 { right: 10%; }
+.custom-start-0  { right: 0; }
+
+ 
