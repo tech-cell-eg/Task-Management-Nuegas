@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
  
-<head>
+<!-- <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuegas</title>
@@ -14,7 +14,7 @@
 </head>
 <body>
    <div class="container">
-    <div class="row">
+    <div class="row"> -->
          <!-- ================   Navbar   ================ -->
         <div class="col-md-2">
               <div class="T-nav">
@@ -70,7 +70,7 @@
 
         </div>
       <!-- ================   Home   ================ -->
-       <div class="col-md-7">
+       <!-- <div class="col-md-7">
         <div id="home">
         <div class="title">
             <div class="title-content">
@@ -162,17 +162,17 @@
 
 
     </div>
-   </div>
+   </div> -->
 
 
 
 
    <!-- ============================  js ============================== -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
-</html>
+</html> -->
 
     <head>
         <meta charset="UTF-8">
@@ -651,7 +651,57 @@
                     <!-- ================   Setting   ================ -->
                     <div id="settin" style="display:none;">
                         <div class="container">
-                            <h3>Setting</h3>
+                             <div class="title">
+            <div class="title-content">
+                <h2>Settings</h2>
+            </div>
+            <div class="title-icons">
+                <i class="fa-solid fa-bell"></i>
+                <img src="images/e3bfc673df9346baa5a19e422153f6439dca9c3a.jpg" alt="">
+            </div>
+        </div>
+        <div class="content">
+          <div class="content-title">
+              <h4 class="active">General</h4>
+              <h4>Notification</h4>
+          </div>
+          <div class="lang">
+            <label for="language">Language</label>
+            <br>
+            <select name="language" id="language">
+                <option value="English">English(Default)</option>
+                <option value="Arabic">Arabic</option>
+                <option value="French">French</option>
+            </select>
+          </div>
+          <div class="Time">
+            <label for="TimeZone">TimeZone</label>
+            <br>
+            <select name="TimeZone" id="TimeZone">
+                <option value="UTC">UTC</option>
+                <option value="Asia">Asia</option>
+                <option value="Africa">Africa</option>
+            </select>
+          </div>
+
+          <label for="hours" class="lab-radio">TimeZone</label>
+         <div class="radios">
+             <div class="radio-1">
+            <label class="Time-check">
+              <span>24Hours</span>
+              <input type="radio" name="hours" value="24">
+            </label>
+          </div>
+
+         <div class="radio-2">
+            <label class="Time-check">
+               <span>12Hours</span>
+              <input type="radio" name="hours" value="12">
+          </label>
+         </div>
+         </div>
+         <button>Save Changes</button>
+        </div>
                         </div>
                     </div>
                     <!-- ================   task   ================ -->
