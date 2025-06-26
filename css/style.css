@@ -16,7 +16,7 @@ a{
 .T-nav{
 padding: 25px;
 position: fixed;
-width: 100%;
+/* width: 100%; */
 top: 0;
 left: 0;
 }
@@ -195,6 +195,7 @@ vertical-align: middle;
 .title{
     display: flex;
    justify-content: space-between;
+   padding-block:10px;
 }
 .title-content{
     width: 236px;
@@ -279,17 +280,18 @@ vertical-align: middle;
 }
 /* ------------------ activity --------------------- */
 .gragh-task .activity{
-    width: 462px;
+    width: 400px;
     height: 214px;
     background-color: #f5f5f7;
     padding: 10px 0px 40px 0px;
     border-radius: 10px;
+    margin-left: 60px;
 }
 .gragh-task .activity .act-title{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-inline: 20px;
+    padding-inline: 30px;
 }
 .gragh-task .activity .act-title h2{
     width: 60px;
@@ -304,7 +306,7 @@ vertical-align: middle;
     font-weight: 500;
 }
  canvas {
-      width: 422px; 
+      width: 400px; 
       height: 130px;
       margin: auto;
       display: block;
@@ -316,60 +318,129 @@ vertical-align: middle;
 
 /* ============= Start Setting ============= */
 #setting{
-    padding-block: 50px;
+    margin-block: 50px;
+    background-color: #F5F5F7;
+    padding-bottom: 200px;
+}
+#setting .title{
+    padding-top:20px;
+    background-color:#FFFFFF;
+}
+#setting .content{
+    background-color: #FFFFFF;
+    margin: 20px;
+    padding: 20px;
+}
+#setting .content .content-title{
+    display: flex;
+    align-items: center;
+}
+#setting .content .content-title h4{
+    font-size: 14px;
+    font-weight: 500;
+    padding-inline: 10px;
+    color: #8E92BC;
+}
+#setting .content .content-title .active{
+    margin-right: 15px;
+    color: #141522;
+    position: relative;
+}
+#setting .content .content-title .active::after{
+    content: '';
+    width: 100%;
+    height: 15%;
+    background-color: #546FFF;
+    position: absolute;
+    left: 0;
+    top: 170%;
+}
+#setting .content label{
+    font-size: 13px;
+    padding-bottom: 16px;
+}
+#setting .content .lang, #setting .content .Time{
+    padding-top: 50px;
+}
+#setting .content select{
+    font-size: 12px;
+    font-weight: 400;
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #F5F5F7;
+    z-index: 20;
+}
+#setting .content select option{
+    z-index: 21;
+}
+.lab-radio{
+    padding-block: 40px;
+}
+.radios{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.radios span{
+    padding-right: 50px;
+}
+.Time-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: border-color 0.3s;
 }
 
 
-
-
-/* ============= End Setting =============== */
- .w-95{
-    width: 95%;
- }
- .bg-custom-light {
-  background-color: #f5f5f7;
-}
-.h-160{
-    height: 160px;
-    width: 320px;
-}
- .image-stack {
-  width: 50%;
- 
- }
-.custom-progress {
-  overflow: visible; 
-  
-}
-
- 
- 
-.progress-dot {
-  position: relative;
-  width:20px;  
-  height:20px;
-  background-color: hsl(216, 82%, 50%);  
+.Time-check input[type="radio"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #546FFF;
   border-radius: 50%;
-  border-color: white;
-  z-index: 2;  
-  top:-2px;
-  transform: translate(-50%, 0); 
+  position: relative;
+  background-color: #fff;
 }
 
 
- 
-@media (max-width: 576px) {
-  .progress-dot {
-    width: 8px;
-    height: 8px;
-  }
-}
-
-.layer-img {
+.Time-check input[type="radio"]:checked::before {
+  content: "";
   position: absolute;
- 
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #546FFF;
+  border-radius: 50%;
+}
+.Time-check input[type="radio"]:checked + span {
+  font-weight: bold;
+  color: #546FFF;
 }
 
+ 
+.Time-check:has(input[type="radio"]:checked) {
+  border-color: #546fff;
+  background-color: #f5faff;
+}
+#setting button{
+    border: none;
+    font-size: 14px;
+    padding: 10px 50px;
+    color: #FFFFFF;
+    background-color: #546FFF;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+=======
  
 .z-1 { z-index: 1; }
 .z-2 { z-index: 2; }
@@ -439,3 +510,4 @@ vertical-align: middle;
 }
 
 /* ============= end Messag3e ============= */
+ 
