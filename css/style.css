@@ -15,8 +15,8 @@ a{
 /* ============= Start Navbar ============= */
 .T-nav{
 padding: 25px;
-position: fixed;
-/* width: 100%; */
+/* position: fixed; */
+width: 100%;
 top: 0;
 left: 0;
 }
@@ -185,6 +185,152 @@ vertical-align: middle;
     border-radius: 10px;
     padding: 10px 20px;
 }
+/* -----------------------    Media Query   ------------------------- */
+
+/* =======================    width 768px   ==================== */
+@media (max-width: 768px) {
+  .T-nav {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-logo {
+    justify-content: center;
+    font-size: 24px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .T-nav .nav-menu {
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .T-nav .nav-menu ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .T-nav .nav-menu li {
+    width: 90%;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .nav-help {
+    width: 90%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .nav-help .help {
+    width: 100%;
+    height: auto;
+  }
+
+  .nav-help .help .help-cap,
+  .nav-help .help .help-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-help .help-btn button {
+    width: 100%;
+  }
+}
+/* =======================    width 769px and 1212px   ==================== */
+@media (min-width: 769px) and (max-width: 1212px) {
+  .T-nav {
+    width: 220px;
+    padding: 20px;
+  }
+
+  .T-nav .nav-logo {
+    width: 100%;
+    font-size: 26px;
+    height: auto;
+  }
+
+  .T-nav .nav-menu {
+    padding: 30px 0;
+  }
+
+  .T-nav .nav-menu ul {
+    width: 100%;
+    height: auto;
+  }
+
+  .T-nav .nav-menu li {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+
+  .T-nav .nav-menu li a {
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+  }
+
+  .nav-help {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding: 15px 10px;
+  }
+
+  .nav-help .help {
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .nav-help .help .help-cap {
+    width: 100%;
+    height: auto;
+  }
+
+  .nav-help .help .help-cap h3 {
+    font-size: 15px;
+    width: 100%;
+    height: auto;
+  }
+
+  .nav-help .help .help-cap p {
+    font-size: 13px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .nav-help .help .help-btn {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+  }
+
+  .nav-help .help .help-btn button {
+    width: 100%;
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .nav-help .que {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 
 /* ============= End Navbar ============= */
 
@@ -238,11 +384,10 @@ vertical-align: middle;
     font-size: 16px;
     padding-bottom: 16px;
 }
-#home .gragh-task .run-task span{
+#home .gragh-task .run-task .num{
     width: 124px;
     height: 24px;
     font-size: 32px;
-    /* padding-bottom: 30px; */
     letter-spacing: -3%;
 }
 #home .gragh-task .rate{
@@ -260,6 +405,7 @@ vertical-align: middle;
 }
 #home .gragh-task .run-task .pre-rate span{
     font-size: 18px;
+    vertical-align: middle;
 }
 #home .gragh-task .run-task .total-rate{
     width: 52px;
@@ -314,6 +460,196 @@ vertical-align: middle;
       padding: 5px 10px 10px 10px;
       border-radius: 10px;
     }
+/* -----------------------    Media Query   ------------------------- */
+
+/* =======================    width 768px   ==================== */
+    @media (max-width: 768px) {
+  .title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .title-content {
+    width: 100%;
+    height: auto;
+  }
+
+  .title-icons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  .title-icons i,
+  .title-icons img {
+    width: 40px;
+    height: 40px;
+  }
+
+  #home .gragh-task {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+  #home .gragh-task .run-task h4{
+    font-size: 20px;
+    margin-left: 40px;
+}
+#home .gragh-task .run-task .num{
+    width: 124px;
+    height: 24px;
+    font-size: 32px;
+    padding-left: 40px;
+    letter-spacing: -3%;
+}
+  #home .gragh-task .rate{
+    width: 50%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+#home .gragh-task .run-task .pre-rate{
+    width: 100px;
+    height: 100px;
+    padding:10px;
+    padding-left: 15px;
+    padding-top: 20px;
+    border: 3px solid #546fff;
+    border-radius: 50%;
+}
+#home .gragh-task .run-task .pre-rate span{
+    font-size: 28px;
+}
+/* #home .gragh-task .run-task .total-rate{
+    width: 40%;
+    height: 70%;
+    margin: auto;
+} */
+#home .gragh-task .run-task .total-rate span{
+    width: 40px;
+    height: 24px;
+    font-size: 30px;
+
+}
+#home .gragh-task .run-task .total-rate p{
+    width: 53px;
+    height: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #8E92BC;
+}
+
+  #home .gragh-task .run-task,
+  .gragh-task .activity {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .gragh-task .activity {
+    padding: 20px;
+  }
+
+  .gragh-task .activity .act-title {
+    align-items: flex-start;
+    gap: 5px;
+    padding-inline: 0;
+  }
+
+  canvas {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100%;
+  }
+}
+/* =======================    width 769px and 1212px   ==================== */
+@media (min-width: 769px) and (max-width: 1212px) {
+  .title {
+    flex-direction: row;
+    gap: 10px;
+    padding-block: 10px;
+  }
+
+  .title-content {
+    width: 100%;
+    height: auto;
+  }
+
+  .title-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    width: auto;
+    height: auto;
+  }
+
+  .title-icons i,
+  .title-icons img {
+    width: 40px;
+    height: 40px;
+  }
+
+  #home .gragh-task {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  #home .gragh-task .run-task {
+    width: 35%;
+    height: auto;
+    margin: 0;
+  }
+
+  .gragh-task .activity {
+    width: 60%;
+    height: auto;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .gragh-task .activity .act-title {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 15px;
+  }
+
+  .gragh-task .activity .act-title h2,
+  .gragh-task .activity .act-title h4 {
+    font-size: 14px;
+    width: auto;
+  }
+
+  canvas {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100%;
+    margin-top: 15px;
+  }
+
+  #home .gragh-task .run-task .num {
+    font-size: 28px;
+  }
+
+  #home .gragh-task .run-task h4 {
+    font-size: 14px;
+  }
+
+  #home .gragh-task .run-task .pre-rate span {
+    font-size: 16px;
+  }
+
+  #home .gragh-task .run-task .total-rate span {
+    font-size: 18px;
+  }
+
+  #home .gragh-task .run-task .total-rate p {
+    font-size: 13px;
+  }
+}
 /* ============= End Home ============= */
 
 /* ============= Start Setting ============= */
@@ -325,6 +661,7 @@ vertical-align: middle;
 #setting .title{
     padding-top:20px;
     background-color:#FFFFFF;
+    margin-inline: 20px;
 }
 #setting .content{
     background-color: #FFFFFF;
@@ -334,11 +671,12 @@ vertical-align: middle;
 #setting .content .content-title{
     display: flex;
     align-items: center;
+    padding-inline: 10px;
 }
 #setting .content .content-title h4{
     font-size: 14px;
     font-weight: 500;
-    padding-inline: 10px;
+    padding-inline: 20px;
     color: #8E92BC;
 }
 #setting .content .content-title .active{
@@ -365,7 +703,7 @@ vertical-align: middle;
 #setting .content select{
     font-size: 12px;
     font-weight: 400;
-    width: 400px;
+    width: 70%;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #F5F5F7;
@@ -439,8 +777,100 @@ vertical-align: middle;
     background-color: #546FFF;
     border-radius: 10px;
     margin-top: 20px;
+    transition: all 0.5s;
+}
+#setting button:hover{
+    width:100%;
+}
+/* -----------------------    Media Query   ------------------------- */
+
+/* =======================    width 768px   ==================== */
+@media (max-width: 768px) {
+  #setting .content {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  #setting .content .content-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  #setting .content select {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .radios {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .Time-check {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .Time-check span {
+    font-size: 14px;
+  }
+
+  #setting button {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+/* =======================    width 769px and 1212px   ==================== */
+@media (min-width: 769px) and (max-width: 1212px) {
+  #setting {
+    padding-bottom: 150px;
+  }
+
+  #setting .content {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  #setting .content .content-title h4 {
+    font-size: 13px;
+  }
+
+  #setting .content select {
+    width: 85%;
+    font-size: 13px;
+  }
+
+  .radios {
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .Time-check {
+    flex: 1 1 45%;
+    min-width: 180px;
+    justify-content: flex-start;
+  }
+
+  .Time-check input[type="radio"] {
+    width: 16px;
+    height: 16px;
+  }
+
+  .Time-check span {
+    font-size: 14px;
+  }
+
+  #setting button {
+    font-size: 13px;
+    padding: 10px 30px;
+  }
 }
 
+/* =================   End Setting   ===================== */
  
 .z-1 { z-index: 1; }
 .z-2 { z-index: 2; }
