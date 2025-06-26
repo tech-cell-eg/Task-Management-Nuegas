@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -172,3 +173,505 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nuegas</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="bg-custom-light">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- ================   Navbar   ================ -->
+                <div class="col-md-2">
+                    <div class="T-nav">
+                        <div class="nav-logo">
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>Nuegas</span>
+                        </div>
+                        <div class="nav-menu">
+                            <ul>
+                                <li class="active">
+                                    <a href="#" data-target="home">Overview</a>
+                                </li>
+                                <li>
+                                    <a href="# " data-target="task">Task</a>
+                                </li>
+                                <li>
+                                    <a href="#mentors" data-target="mentors">Mentors</a>
+                                </li>
+                                <li>
+                                    <a href="#message" data-target="message">Message</a>
+                                </li>
+                                <li>
+                                    <a href="#setting" data-target="setting">Setting</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav-help">
+                            <div class="graph-1">
+                                <div class="gra-1"></div>
+                            </div>
+                            <div class="graph-2">
+                                <div class="gra-2"></div>
+                            </div>
+                            <div class="que">
+                                <i class="fa-solid fa-question"></i>
+                            </div>
+                            <div class="help">
+                                <div class="help-cap">
+                                    <h3>Help Center</h3>
+                                    <p>Having Trouble in Learning, Please Contact Us for more questions.</p>
+                                </div>
+                                <div class="help-btn">
+                                    <button>Go To Help Center</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ================   Home   ================ -->
+                <div class="col-md-10 bg-white">
+                    <div class="row">
+                        <div class="col-md-8" id="content-area">
+                            <div id="home">
+                                <div class="title">
+                                    <div class="title-content">
+                                        <h2>Hi, Skylar Dias</h2>
+                                        <p>Let's Finish Your task today!</p>
+                                    </div>
+                                    <div class="title-icons">
+                                        <i class="fa-solid fa-bell"></i>
+                                        <img src="images/e3bfc673df9346baa5a19e422153f6439dca9c3a.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="gragh-task">
+                                    <div class="run-task">
+                                        <h4>Running Task</h4>
+                                        <span>65</span>
+                                        <div class="rate">
+                                            <div class="pre-rate">
+                                                <span>45%</span>
+                                            </div>
+                                            <div class="total-rate">
+                                                <span>100</span>
+                                                <p>Task</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="activity">
+                                        <div class="act-title">
+                                            <h2>Activity</h2>
+                                            <h4>This Week</h4>
+                                        </div>
+                                        <canvas id="myLineChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="setting">
+                                <div class="title">
+                                    <div class="title-content">
+                                        <h2>Settings</h2>
+                                    </div>
+                                    <div class="title-icons">
+                                        <i class="fa-solid fa-bell"></i>
+                                        <img src="images/e3bfc673df9346baa5a19e422153f6439dca9c3a.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ================   Calender   ================ -->
+                        <div class="col-md-4" id="calendar-column" style="height: 100vh">
+                            <div class="one p-4 bg-white mb-4 rounded-4">
+                                <div class="my-3 d-flex justify-content-between align-items-center">
+                                    <img src="images/arrow-left.png" alt="left">
+                                    <span class="fw-semibold">July 2024</span>
+                                    <img src="images/arrow-right (1).png" alt="right">
+                                </div>
+                                <div class="d-flex justify-content-between text-center">
+                                    <div>
+                                        <div class="  fw-bold">S</div>
+                                        <div class="py-2 mt-2 px-3 rounded-circle bg-custom-light">30</div>
+                                    </div>
+                                    <div>
+                                        <div class="  fw-bold">M</div>
+                                        <div class="py-2 mt-2 px-3 rounded-circle bg-custom-light">1</div>
+                                    </div>
+                                    <div>
+                                        <div class="  fw-bold">T</div>
+                                        <div class="py-2 mt-2 px-3 rounded-circle bg-custom-light">2</div>
+                                    </div>
+                                    <div>
+                                        <div class="  fw-bold">W</div>
+                                        <div class="py-2 mt-2 px-3 rounded-circle bg-custom-light">3</div>
+                                    </div>
+                                    <div class="rounded-pill  bg-black p-1">
+                                        <div class="text-white  fw-bold">T</div>
+                                        <div class="py-2 mt-2 px-3 rounded-circle bg-primary">4</div>
+                                    </div>
+                                    <div>
+                                        <div class="  fw-bold">F</div>
+                                        <div class="py-2 mt-2 px-3 rounded-circle bg-custom-light">5</div>
+                                    </div>
+                                    <div>
+                                        <div class="  fw-bold">S</div>
+                                        <div class="py-2 mt-2 px-3 rounded-circle bg-custom-light">6</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second p-4 bg-white rounded-4">
+                                <div class="d-flex justify-content-between align-items-center m-3 text-black">
+                                    <h6 class="mb-0">Task Today</h6>
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                                <div class="card border-0">
+                                    <img src="images/rightImage.jpg" class="card-img-top w-100 rounded-3 h-160" alt="right image">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-semibold">
+                                            Creating Awesome Mobile Apps
+                                        </h5>
+                                        <p class="text-secondary mb-2">UI/UX Designer</p>
+                                        <div class="d-flex justify-content-between align-items-center mb-1">
+                                            <h6 class="mb-0">Progress</h6>
+                                            <h6 class="mb-0 text-primary">90%</h6>
+                                        </div>
+                                        <div
+                                            class="progress my-2 custom-progress  "
+                                            role="progressbar"
+                                            aria-valuenow="90"
+                                            aria-valuemin="0"
+                                            aria-valuemax="100"
+                                        >
+                                            <div class="progress-bar bg-primary rounded-2" style="width: 90%;"></div>
+                                            <span class="progress-dot position-relative"></span>
+                                        </div>
+                                        <div class="d-flex   justify-content-between mb-3 text-secondary  ">
+                                            <div>
+                                                <i class="fa-regular fa-clock fs-5 me-2"></i>
+                                                <span>1 Hour</span>
+                                            </div>
+                                            <div class="position-relative  image-stack">
+                                                <img src="images/Photo 4.png" alt="" class="layer-img z-1 custom-start-40">
+                                                <img src="images/Photo 2.png" alt="" class="layer-img z-2 custom-start-30">
+                                                <img src="images/Photo 1.png" alt="" class="layer-img z-3 custom-start-20">
+                                                <img src="images/Photo 5.png" alt="" class="layer-img z-4 custom-start-10">
+                                                <img src="images/Photo 3.png" alt="" class="layer-img z-5 custom-start-0">
+                                            </div>
+                                        </div>
+                                        <hr class="border border-secondary-subtle my-3">
+                                        <div class="d-flex justify-content-between mb-3">
+                                            <h5 class="fw-bold mb-0">Detail Task</h5>
+                                            <p class="text-secondary mb-0">UI/UX Designer</p>
+                                        </div>
+                                        <div class="items pb-4">
+                                            <div class="item d-flex align-items-center mb-2">
+                                                <p class="px-3 py-2 bg-custom-light rounded-3 me-2 mb-0">
+                                                    1
+                                                </p>
+                                                <p class="mb-0">Understanding the tools in Figma</p>
+                                            </div>
+                                            <div class="item d-flex align-items-center mb-2">
+                                                <p class="px-3 py-2 bg-custom-light rounded-3 me-2 mb-0">
+                                                    2
+                                                </p>
+                                                <p class="mb-0">
+                                                    Understanding the basics of making design
+                                                </p>
+                                            </div>
+                                            <div class="item d-flex align-items-center mb-3">
+                                                <p class="px-3 py-2 bg-custom-light rounded-3 me-2 mb-0">
+                                                    3
+                                                </p>
+                                                <p class="mb-0">Design a mobile application with Figma</p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-primary w-100 rounded-3">Go To Details
+                                        </a
+                >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ================   message   ================ -->
+                    <div id="message" style="display:none;">
+                        <div class="container">
+                            <div class="header px-5 py-3 d-flex justify-content-between">
+                                <h3>Message</h3>
+                                <div class="icons">
+                                    <img src="images/notif.png" alt="notif icon">
+                                    <img src="images/Profil.png" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 px-5">
+                                    <div class="search-bar d-flex   rounded-3">
+                                        <input type="search" class="form-control bg-transparent border-2" placeholder="Search Name">
+                                        <i class="fa fa-search text-black"></i>
+                                    </div>
+                                    <div class="messages  ">
+ 
+                                        
+ <div class="message rounded-1 p-1 bg-white shadow-sm d-flex justify-content-between align-items-center w-100 my-3">
+                                            <div class="d-flex align-items-center ">
+                                                <div class="image me-3">
+                                                    <img
+                                                        src="images/photo.png"
+                                                        alt="Profile"
+                                                        class="rounded-circle"
+                                                        style="width: 50px; height: 50px; object-fit: cover;"
+                                                    >
+                                                </div>
+                                                <div class="text w-100">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <h6 class="mb-0 fw-bold">Angelie Crison</h6>
+                                                        <span class="text-muted ms-5 ps-5" style="font-size: 0.5rem;"> 1m ago</span>
+                                                    </div>
+                                                    <small class="text-black fw-lighter" style="font-size: 10px;">Thank you very much. I'm glad to hear that!</small>
+                                                    <span class="text-danger ms-3">•</span>
+                                                </div>
+                                            </div>
+                                        </div> <div class="message rounded-1 p-1 bg-white shadow-sm d-flex justify-content-between align-items-center w-100 my-3">
+                                            <div class="d-flex align-items-center ">
+                                                <div class="image me-3">
+                                                    <img
+                                                        src="images/photo.png"
+                                                        alt="Profile"
+                                                        class="rounded-circle"
+                                                        style="width: 50px; height: 50px; object-fit: cover;"
+                                                    >
+                                                </div>
+                                                <div class="text w-100">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <h6 class="mb-0 fw-bold">Angelie Crison</h6>
+                                                        <span class="text-muted ms-5 ps-5" style="font-size: 0.5rem;"> 1m ago</span>
+                                                    </div>
+                                                    <small class="text-black fw-lighter" style="font-size: 10px;">Thank you very much. I'm glad to hear that!</small>
+                                                    <span class="text-danger ms-3">•</span>
+                                                </div>
+                                            </div>
+                                        </div> <div class="message rounded-1 p-1 bg-white shadow-sm d-flex justify-content-between align-items-center w-100 my-3">
+                                            <div class="d-flex align-items-center ">
+                                                <div class="image me-3">
+                                                    <img
+                                                        src="images/photo.png"
+                                                        alt="Profile"
+                                                        class="rounded-circle"
+                                                        style="width: 50px; height: 50px; object-fit: cover;"
+                                                    >
+                                                </div>
+                                                <div class="text w-100">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <h6 class="mb-0 fw-bold">Angelie Crison</h6>
+                                                        <span class="text-muted ms-5 ps-5" style="font-size: 0.5rem;"> 1m ago</span>
+                                                    </div>
+                                                    <small class="text-black fw-lighter" style="font-size: 10px;">Thank you very much. I'm glad to hear that!</small>
+                                                    <span class="text-danger ms-3">•</span>
+                                                </div>
+                                            </div>
+                                        </div><div class="message rounded-1 p-1 bg-white shadow-sm d-flex justify-content-between align-items-center w-100 my-3">
+                                            <div class="d-flex align-items-center ">
+                                                <div class="image me-3">
+                                                    <img
+                                                        src="images/photo.png"
+                                                        alt="Profile"
+                                                        class="rounded-circle"
+                                                        style="width: 50px; height: 50px; object-fit: cover;"
+                                                    >
+                                                </div>
+                                                <div class="text w-100">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <h6 class="mb-0 fw-bold">Angelie Crison</h6>
+                                                        <span class="text-muted ms-5 ps-5" style="font-size: 0.5rem;"> 1m ago</span>
+                                                    </div>
+                                                    <small class="text-black fw-lighter" style="font-size: 10px;">Thank you very much. I'm glad to hear that!</small>
+                                                    <span class="text-danger ms-3">•</span>
+                                                </div>
+                                            </div>
+                                        </div><div class="message rounded-1 p-1 bg-white shadow-sm d-flex justify-content-between align-items-center w-100 my-3">
+                                            <div class="d-flex align-items-center ">
+                                                <div class="image me-3">
+                                                    <img
+                                                        src="images/photo.png"
+                                                        alt="Profile"
+                                                        class="rounded-circle"
+                                                        style="width: 50px; height: 50px; object-fit: cover;"
+                                                    >
+                                                </div>
+                                                <div class="text w-100">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <h6 class="mb-0 fw-bold">Angelie Crison</h6>
+                                                        <span class="text-muted ms-5 ps-5" style="font-size: 0.5rem;"> 1m ago</span>
+                                                    </div>
+                                                    <small class="text-black fw-lighter" style="font-size: 10px;">Thank you very much. I'm glad to hear that!</small>
+                                                    <span class="text-danger ms-3">•</span>
+                                                </div>
+                                            </div>
+                                        </div><div class="message rounded-1 p-1 bg-white shadow-sm d-flex justify-content-between align-items-center w-100 my-3">
+                                            <div class="d-flex align-items-center ">
+                                                <div class="image me-3">
+                                                    <img
+                                                        src="images/photo.png"
+                                                        alt="Profile"
+                                                        class="rounded-circle"
+                                                        style="width: 50px; height: 50px; object-fit: cover;"
+                                                    >
+                                                </div>
+                                                <div class="text w-100">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <h6 class="mb-0 fw-bold">Angelie Crison</h6>
+                                                        <span class="text-muted ms-5 ps-5" style="font-size: 0.5rem;"> 1m ago</span>
+                                                    </div>
+                                                    <small class="text-black fw-lighter" style="font-size: 10px;">Thank you very much. I'm glad to hear that!</small>
+                                                    <span class="text-danger ms-3">•</span>
+                                                </div>
+                                            </div>
+                                        </div><div class="message rounded-1 p-1 bg-white shadow-sm d-flex justify-content-between align-items-center w-100 my-3">
+                                            <div class="d-flex align-items-center ">
+                                                <div class="image me-3">
+                                                    <img
+                                                        src="images/photo.png"
+                                                        alt="Profile"
+                                                        class="rounded-circle"
+                                                        style="width: 50px; height: 50px; object-fit: cover;"
+                                                    >
+                                                </div>
+                                                <div class="text w-100">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <h6 class="mb-0 fw-bold">Angelie Crison</h6>
+                                                        <span class="text-muted ms-5 ps-5" style="font-size: 0.5rem;"> 1m ago</span>
+                                                    </div>
+                                                    <small class="text-black fw-lighter" style="font-size: 10px;">Thank you very much. I'm glad to hear that!</small>
+                                                    <span class="text-danger ms-3">•</span>
+                                                </div>
+                                            </div>
+                                        </div><div class="message rounded-1 p-1 bg-white shadow-sm d-flex justify-content-between align-items-center w-100 my-3">
+                                            <div class="d-flex align-items-center ">
+                                                <div class="image me-3">
+                                                    <img
+                                                        src="images/photo.png"
+                                                        alt="Profile"
+                                                        class="rounded-circle"
+                                                        style="width: 50px; height: 50px; object-fit: cover;"
+                                                    >
+                                                </div>
+                                                <div class="text w-100">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <h6 class="mb-0 fw-bold">Angelie Crison</h6>
+                                                        <span class="text-muted ms-5 ps-5" style="font-size: 0.5rem;"> 1m ago</span>
+                                                    </div>
+                                                    <small class="text-black fw-lighter" style="font-size: 10px;">Thank you very much. I'm glad to hear that!</small>
+                                                    <span class="text-danger ms-3">•</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 px-2">
+                                  <div class="container d-flex  justify-content-between bg-white">
+                                     <div class="message  d-flex justify-content-between align-items-center ">
+                                            <div class="d-flex align-items-center ">
+                                                <div class="image me-3">
+                                                    <img
+                                                        src="images/photo.png"
+                                                        alt="Profile"
+                                                        class="rounded-circle"
+                                                        style="width: 50px; height: 50px; object-fit: cover;"
+                                                    >
+                                                </div>
+                                                <div class="text w-100">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <h6 class="mb-0 fw-bold">Angelie Crison</h6>
+                                                      
+                                                    </div>
+ <span class="text-success ms-3">•</span><span class="fw-lighter">online</span>                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="icons"><span class="d-inline-block rounded-circle border border-light border-1 p-2 bg-white">
+  <img src="images/video call.png" alt=""   class="rounded-circle">
+</span>
+<span class="d-inline-block rounded-circle border border-light border-1 p-2 bg-white">
+  <img src="images/voice call.png" alt=""   class="rounded-circle">
+</span>
+</div>
+                                  </div>
+                                  <div class="container bg-light py-3">
+                                     <div class="text-center m-2">
+  <p class="d-inline-block rounded-3 bg-black text-white p-1 px-2  text-white">Today</p>
+</div>
+<div class="d-flex justify-content-end m-2">
+  <span class="bg-primary text-white p-2 rounded-start-3 ">Morning Angelie, I have a question about My Task</span>
+  
+</div>
+<div  >
+  <span class="bg-white text-black p-2 rounded-start-3 ">Morning Angelie, I have a question about My Task</span>
+ <small class="text-muted mt-1 d-block">10:40 AM</small>
+</div>
+<div class="d-flex justify-content-end m-2">
+  <div class="d-flex flex-column align-items-end" style="max-width: 372px;">
+     
+    <div class="position-relative mb-2 rounded-3 overflow-hidden">
+      <img src="images/130d51301c6cd1a343d6186cd47d2d102eb9b92f.jpg" 
+           class="img-fluid" 
+           alt="Shared photo"
+           style="max-height: 141px; object-fit: cover;">
+      <div class="position-absolute bottom-0 start-0 end-0 p-2 text-white" 
+           style="background: linear-gradient(to top, rgba(0,0,0,0.7), transparent)">
+        <small>Photo</small>
+      </div>
+    </div>
+    <div class="bg-primary text-white p-2 rounded-3 rounded-bottom-end-0">
+      Morning Angelie, I have a question about My Task
+    </div>
+    <small class="text-muted mt-1">10:42 AM</small>
+  </div>
+</div>
+<div  >
+  <span class="bg-white text-black p-2 rounded-start-3 d-inline-block my-3 ">No plugins. You just have to make it smaller according to the size of the </span><br>
+   <span class="bg-white text-black p-2 rounded-start-3 my-3 ">Thank You very much</span>
+
+  <small class="text-muted m-1 d-block ">10:40 AM</small>
+
+</div>
+
+
+
+                                  </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- ================   Setting   ================ -->
+                    <div id="settin" style="display:none;">
+                        <div class="container">
+                            <h3>Setting</h3>
+                        </div>
+                    </div>
+                    <!-- ================   task   ================ -->
+                    <div id="task" style="display:none;">
+                        <div class="container">
+                            <h3>tastk</h3>
+                        </div>
+                    </div>
+                    <!-- ================   mentors   ================ -->
+                    <div id="mentors" style="display:none;">
+                        <div class="container">
+                            <h3>mentors</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============================  js ============================== -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+ 
