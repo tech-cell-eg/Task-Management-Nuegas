@@ -1,0 +1,62 @@
+.search-box {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  overflow: hidden;
+  padding-left: 10px;
+}
+
+.search-box input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 150px;
+}
+
+.search-box button {
+  border: none;
+  background: transparent;
+}
+.car-mentors{
+    margin-top: 30px;
+padding-top: 5px;
+}
+.text-car{
+margin-left: 10px;
+}
+.car2-mentors{
+        margin-top: 30px;
+        margin-bottom: 20px;
+padding-top: 5px;
+}
+.card img.avatar {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+}
+.card-body {
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+ .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 25px;
+  height: 25px;
+  background-color: #000000; 
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  filter: brightness(1.2);
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 1px;
+} 
+ .card-info{
+    margin-top: 10px;
+ }

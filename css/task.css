@@ -1,0 +1,95 @@
+.search-box {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  overflow: hidden;
+  padding-left: 10px;
+}
+
+.search-box input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 150px;
+}
+
+.search-box button {
+  border: none;
+  background: transparent;
+}
+.car-task{
+    margin-top: 40px;
+    margin-bottom: 20px;
+padding-top: 10px;
+}
+.text-car-task{
+margin-left: 170px;
+}
+
+.carousel-wrapper {
+  max-width: 1300px;
+  width: 100%;
+}
+ .card-body{
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+ }
+my-carousel .card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #000000;
+  font-size: 1.25rem;
+}
+
+my-carousel img.card-img-top {
+  border-radius: 16px 16px 0 0;
+}
+
+.card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+.btn{
+ display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+.avatar-group {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-group .avatar-corse {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #fff;
+  margin-left: -10px;
+  object-fit: cover;
+}
+
+
+.custom-card {
+  height: 100%;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.custom-arrow .carousel-control-prev-icon,
+.custom-arrow .carousel-control-next-icon {
+  width: 25px;
+  height: 25px;
+  background-color: #000000; 
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  filter: brightness(1.2);
+}
