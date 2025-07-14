@@ -1,30 +1,127 @@
-.card img.avatar {
+/* Mentor Section */
+.mentor-section {
+  padding: 2rem 0;
+  position: relative;
+}
+
+/* Mentor Carousel */
+.mentor-carousel {
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mentor-carousel__row {
+  padding: 0 1rem;
+}
+
+/* Mentor Card */
+.mentor-card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  min-height: 160px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.mentor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.mentor-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.mentor-card__profile {
+  display: flex;
+  align-items: center;
+}
+
+.mentor-card__avatar {
   width: 45px;
   height: 45px;
   object-fit: cover;
+  margin-right: 0.75rem;
 }
-.card-body {
-  font-size: 1rem;
+
+.mentor-card__name {
+  font-size: 1.1rem;
   font-weight: 600;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  color: #2d3748;
 }
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+
+.mentor-card__specialty {
+  font-size: 0.85rem;
+  color: #718096;
+}
+
+.mentor-card__status {
+  color: #4299e1;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.mentor-card__footer {
+  margin-top: 1rem;
+}
+
+.mentor-card__stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mentor-card__stat {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #718096;
+}
+
+.mentor-card__icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5rem;
+}
+
+/* Carousel Controls */
+.mentor-carousel__control.carousel-control-prev {
+  left: -20px;
+}
+
+.mentor-carousel__control.carousel-control-next {
+  right: -20px;
+}
+
+.mentor-carousel__icon {
   width: 25px;
   height: 25px;
-  background-color: #000000; 
+  background-color: #000000;
   background-size: 60% 60%;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
   filter: brightness(1.2);
 }
-.carousel-control-prev,
-.carousel-control-next {
-  width: 5%;
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+  .mentor-carousel__control.carousel-control-prev {
+    left: 5px;
+  }
+  
+  .mentor-carousel__control.carousel-control-next {
+    right: 5px;
+  }
+  
+  .mentor-card {
+    max-width: 100%;
+  }
 }
-
-
-
