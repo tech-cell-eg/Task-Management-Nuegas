@@ -1,0 +1,341 @@
+        .task-carousel-container {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-top: 10px;
+        }
+        
+        .task-carousel-wrapper {
+            max-width: 1300px;
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .task-carousel-search {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 8px 15px;
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            margin-left: 170px;
+            margin-bottom: 20px;
+        }
+        
+        .task-carousel-search-input {
+            border: none;
+            background-color: transparent;
+            outline: none;
+            width: 150px;
+            padding: 5px;
+        }
+        
+        .task-carousel-search-btn {
+            border: none;
+            background: transparent;
+            color: #6c757d;
+            padding: 5px;
+        }
+        
+        .task-carousel-card {
+            height: 100%;
+            min-height: 420px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .task-carousel-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+        
+        .task-carousel-card-img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 16px 16px 0 0;
+        }
+        
+        .task-carousel-card-body {
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        
+        .task-carousel-card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #000000;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .task-carousel-card-text {
+            font-size: 1rem;
+            color: #6c757d;
+            margin-bottom: 1rem;
+        }
+        
+        .task-carousel-progress-container {
+            margin-bottom: 1rem;
+        }
+        
+        .task-carousel-progress-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        .task-carousel-progress-bar {
+            height: 6px;
+            border-radius: 3px;
+        }
+        
+        .task-carousel-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+        
+        .task-carousel-time {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .task-carousel-time-icon {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .task-carousel-avatar-group {
+            display: flex;
+            align-items: center;
+        }
+        
+        .task-carousel-avatar {
+            width: 35px;
+            height: 35px;
+            border: 2px solid #fff;
+            margin-left: -10px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        
+        .task-carousel-nav-arrow:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        
+        .task-carousel-nav-prev {
+            left: -20px;
+        }
+        
+        .task-carousel-nav-next {
+            right: -20px;
+        }
+        
+        @media (max-width: 767.98px) {
+            .task-carousel-search {
+                margin-left: 0;
+                width: 100%;
+            }
+            
+            .task-carousel-search-input {
+                width: 100%;
+            }
+            
+            .task-carousel-nav-prev {
+                left: 5px;
+            }
+            
+            .task-carousel-nav-next {
+                right: 5px;
+            }
+        }
+
+        .project-carousel {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.project-carousel__wrapper {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.project-carousel__search {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-left: 170px;
+    margin-bottom: 20px;
+}
+
+.project-carousel__search-input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 150px;
+    padding: 5px;
+}
+
+.project-carousel__search-btn {
+    border: none;
+    background: transparent;
+    color: #6c757d;
+    padding: 5px;
+}
+
+/* Project Cards */
+.project-card {
+    height: 100%;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.project-card__image {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+
+.project-card__content {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.project-card__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project-card__category {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.project-card__progress {
+    margin-bottom: 1rem;
+}
+
+.project-card__progress-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.project-card__progress-value {
+    font-weight: 600;
+}
+
+.project-card__progress-bar {
+    height: 6px;
+    border-radius: 3px;
+    background-color: #edf2f7;
+}
+
+.project-card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.project-card__deadline {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.project-card__deadline-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.project-card__deadline-text {
+    font-size: 0.9rem;
+}
+
+.project-card__team {
+    display: flex;
+    align-items: center;
+}
+
+.project-card__team-avatar {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #fff;
+    margin-left: -10px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.project-card__team-avatar:first-child {
+    margin-left: 0;
+}
+
+/* Navigation Arrows */
+.project-carousel__control--prev {
+    left: -20px;
+}
+
+.project-carousel__control--next {
+    right: -20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    .project-carousel__search {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .project-carousel__search-input {
+        width: 100%;
+    }
+    
+    .project-carousel__control--prev {
+        left: 5px;
+    }
+    
+    .project-carousel__control--next {
+        right: 5px;
+    }
+}

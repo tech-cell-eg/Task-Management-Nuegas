@@ -1,0 +1,182 @@
+:root {
+            --mentor-primary: #4e73df;
+            --mentor-secondary: #f8f9fa;
+            --mentor-text: #5a5c69;
+        }
+        
+        .mentor-carousel-container {
+            font-family: 'Nunito', sans-serif;
+            color: var(--mentor-text);
+        }
+        
+        .mentor-section-wrapper {
+            padding: 20px 0;
+            background-color: #f8f9fc;
+        }
+        
+        
+        .mentor-profile-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .mentor-profile-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+        }
+        
+        .mentor-profile-image {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border: 3px solid white;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+        }
+        
+        .mentor-follow-action {
+            font-size: 0.8rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .mentor-follow-action.active {
+            background-color: rgba(78, 115, 223, 0.1);
+            color: var(--mentor-primary);
+        }
+        
+        .mentor-follow-action:not(.active):hover {
+            background-color: var(--mentor-primary);
+            color: rgb(9, 13, 243);
+        }
+        
+        .mentor-stats-icon {
+            width: 18px;
+            height: 18px;
+        }
+        .mentor-carousel-nav-prev {
+            position: absolute;
+            right:  40px;
+            
+        }
+        
+        .mentor-carousel-nav-next {
+            right: 20px;
+        }
+        
+        
+        .mentor-stats-divider {
+            border-top: 1px solid #eee;
+        }
+        
+        @media (max-width: 767.98px) {
+            .mentor-search-container {
+                width: 200px;
+            }
+            
+            .mentor-carousel-nav-prev {
+                left: 0;
+            }
+            
+            .mentor-carousel-nav-next {
+                right: 0;
+            }
+        }
+        
+        @media (max-width: 575.98px) {
+            .mentor-search-container {
+                width: 100%;
+                margin-top: 1rem;
+            }
+            
+            .mentor-section-header {
+                flex-direction: column;
+                align-items: flex-start !important;
+            }
+        }
+
+        .time-limit-section {
+            padding: 2rem 0;
+            background-color: #f8f9fa;
+        }
+        
+        .time-limit-header {
+            margin-bottom: 1.5rem;
+            padding: 0 15px;
+        }
+        
+        .time-limit-card {
+          border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            margin-bottom: 1.5rem;
+            height: 100%;
+        }
+        
+        .time-limit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .time-limit-profile-img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border: 2px solid #f0f0f0;
+        }
+        
+        .time-limit-profile-info {
+            flex: 1;
+        }
+        
+        .time-limit-profile-name {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        
+        .time-limit-profile-title {
+            color: #6c757d;
+            font-size: 0.85rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .time-limit-profile-desc {
+            color: #495057;
+            font-size: 0.8rem;
+            margin-bottom: 0;
+        }
+        
+        .time-limit-follow-status {
+            color: #4e73df;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .time-limit-stats-container {
+            border-top: 1px solid #e9ecef;
+            padding-top: 0.75rem;
+            margin-top: 0.75rem;
+        }
+        
+        .time-limit-stat-item {
+            display: flex;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+        
+        .time-limit-stat-icon {
+            width: 18px;
+            height: 18px;
+            margin-right: 0.5rem;
+        }
+        
+        @media (max-width: 767.98px) {
+            .time-limit-card {
+                margin-bottom: 1rem;
+            }
+        }

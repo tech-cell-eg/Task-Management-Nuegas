@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nuegas</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/all.min.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body class="bg-custom-light">
-        <div class="container-fluid">
-            <div class="row">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuegas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/task.css" />
+    <link rel="stylesheet" href="css/Mentors.css" />
+    <link rel="stylesheet" href="css/carousel-acc.css" />
+    <link rel="stylesheet" href="css/carousel-corse.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<div>
+   <div class=" ">
+    <div class="row">
                 <!-- ================   Navbar   ================ -->
                 <div class="col-sm-12 col-md-2">
                     <div class="T-nav">
@@ -65,8 +74,8 @@
                 <!-- ================   Home   ================ -->
                 <div class="col-sm-12 col-md-10 bg-white">
                     <div class="row">
-                        <div class="col-md-8" id="content-area">
-                            <div id="home">
+                        <div class="col-md-8" id="home">
+                            <div>
                                 <div class="title">
                                     <div class="title-content">
                                         <h2>Hi, Skylar Dias</h2>
@@ -100,6 +109,8 @@
                                     </div>
                                 </div>
                             </div>
+                            <my-carousel-corse-acc-home></my-carousel-corse-acc-home>
+              <my-carousel-corse-home></my-carousel-corse-home>
                         </div>
                         <!-- ================   Calender   ================ -->
                         <div class="col-md-4" id="calendar-column" style="height: 100vh">
@@ -463,10 +474,12 @@
                             </div> 
                         </div>
                     </div>
+ 
                     <!-- ================   Setting   ================ -->
                     <div id="setting" style="display:none;">
                         <div class="container">
-                             <div class="title">
+                             
+        <div class="title">
             <div class="title-content">
                 <h2 class="p-3">Settings</h2>
             </div>
@@ -517,26 +530,305 @@
          </div>
          <button>Save Changes</button>
         </div>
+         
                         </div>
                     </div>
                     <!-- ================   task   ================ -->
                     <div id="task" style="display:none;">
-                        <div class="container">
-                            <h3>tastk</h3>
-                        </div>
+                        <section class="container py-3">
+                <div class="row align-items-center gy-3">
+                  <!-- Left Side -->
+                  <div class="col-12 col-md-3">
+                    <h5 class="fw-bold mb-0">Explore Task</h5>
+                  </div>
+
+                  <!-- Middle (Search) -->
+                  <div class="col-12 col-md-4">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Search Task"
+                      />
+                      <button class="btn btn-outline-secondary">
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Right Side (Buttons + Icons) -->
+                  <div
+                    class="col-12 col-md-5 d-flex flex-wrap justify-content-md-end align-items-center gap-2"
+                  >
+                    <button
+                      class="btn btn-light d-flex align-items-center gap-2"
+                    >
+                      <i class="fas fa-layer-group text-primary"></i>
+                      <span>Category</span>
+                    </button>
+
+                    <button
+                      class="btn btn-light d-flex align-items-center gap-2"
+                    >
+                      <i class="fas fa-sort text-primary"></i>
+                      <span>Sort By: Deadline</span>
+                    </button>
+
+                    <i class="fas fa-bell text-muted fs-5"></i>
+                    <img
+                      src="images/profile1.png"
+                      class="rounded-circle"
+                      width="35"
+                      height="35"
+                    />
+                  </div>
+                </div>
+              </section>
+              <div class="car-task">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3 text-car-task"
+                >
+                  <h4 class="fw-semibold">Time Limit</h4>
+                </div>
+                <my-carousel-task></my-carousel-task>
+                <br />
+                <div
+                    class="d-flex justify-content-between align-items-center mb-3 text-car-task"
+                >
+                    <h4 class="fw-semibold">New Task</h4>
+                </div>
+                <my-carousel-timelimit></my-carousel-timelimit>
+                </div>
                     </div>
                     <!-- ================   mentors   ================ -->
-                    <div id="mentors" style="display:none;">
-                        <div class="container">
-                            <h3>mentors</h3>
+                    <div id="mentors" style="display: none">
+                <section class="container py-3">
+        <div class="row align-items-center gy-3">
+        <!-- Left Side -->
+        <div class="col-12 col-md-3">
+            <h5 class="fw-bold mb-0">Explore Task</h5>
+        </div>
+
+        <!-- Middle (Search) -->
+        <div class="col-12 col-md-4">
+            <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search Task" />
+            <button class="btn btn-outline-secondary" type="" >
+                <i class="fas fa-search"></i>
+            </button>
+            </div>
+        </div>
+
+        <!-- Right Side (Buttons + Icons) -->
+        <div
+            class="col-12 col-md-5 d-flex flex-wrap justify-content-md-end align-items-center gap-2"
+        >
+            <button class="btn btn-light d-flex align-items-center gap-2">
+            <i class="fas fa-layer-group text-primary"></i>
+            <span>Category</span>
+            </button>
+
+            <button class="btn btn-light d-flex align-items-center gap-2">
+            <i class="fas fa-sort text-primary"></i>
+            <span>Sort By: Deadline</span>
+            </button>
+
+            <i class="fas fa-bell text-muted fs-5"></i>
+            <img
+            src="images/profile1.png"
+            class="rounded-circle"
+            width="35"
+            height="35"
+            alt="profile1"          
+            />
+        </div>
+        </div>
+    </section>
+    <div class="car-mentors">
+        <my-carousel-mentors></my-carousel-mentors>
+    </div>
+
+<section class="time-limit-section">
+        <div class="time-limit-header d-flex justify-content-between align-items-center">
+            <h4 class="fw-semibold">Time Limit</h4>
+        </div>
+        
+        <div class="container">
+            <div class="row g-5">
+                <!-- Card 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="time-limit-card card p-3">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-start">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle time-limit-profile-img me-3" alt="Abraham Lincoln">
+                                <div class="time-limit-profile-info">
+                                    <h6 class="time-limit-profile-name mb-0">Abraham Lincoln</h6>
+                                    <small class="time-limit-profile-title text-muted d-block">3D Design</small>
+                                    <p class="time-limit-profile-desc mb-0">Lorem ipsum dolor sit amet consectetur...</p>
+                                </div>
+                            </div>
+                            <span class="time-limit-follow-status">Followed</span>
+                        </div>
+                        <div class="time-limit-stats-container d-flex justify-content-between align-items-center">
+                            <div class="time-limit-stat-item">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3281/3281289.png" class="time-limit-stat-icon" alt="Tasks">
+                                <span>40 Tasks</span>
+                            </div>
+                            <div class="time-limit-stat-item">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="time-limit-stat-icon" alt="Rating">
+                                <span>4.9 (610 Reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="time-limit-card card p-3">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-start">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle time-limit-profile-img me-3" alt="Sarah Johnson">
+                                <div class="time-limit-profile-info">
+                                    <h6 class="time-limit-profile-name mb-0">Sarah Johnson</h6>
+                                    <small class="time-limit-profile-title text-muted d-block">UI Designer</small>
+                                    <p class="time-limit-profile-desc mb-0">Lorem ipsum dolor sit amet consectetur...</p>
+                                </div>
+                            </div>
+                            <span class="time-limit-follow-status">Followed</span>
+                        </div>
+                        <div class="time-limit-stats-container d-flex justify-content-between align-items-center">
+                            <div class="time-limit-stat-item">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3281/3281289.png" class="time-limit-stat-icon" alt="Tasks">
+                                <span>35 Tasks</span>
+                            </div>
+                            <div class="time-limit-stat-item">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="time-limit-stat-icon" alt="Rating">
+                                <span>4.8 (540 Reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="time-limit-card card p-3">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-start">
+                                <img src="https://randomuser.me/api/portraits/men/22.jpg" class="rounded-circle time-limit-profile-img me-3" alt="John Doe">
+                                <div class="time-limit-profile-info">
+                                    <h6 class="time-limit-profile-name mb-0">John Doe</h6>
+                                    <small class="time-limit-profile-title text-muted d-block">Illustrator</small>
+                                    <p class="time-limit-profile-desc mb-0">Lorem ipsum dolor sit amet consectetur...</p>
+                                </div>
+                            </div>
+                            <span class="time-limit-follow-status">Followed</span>
+                        </div>
+                        <div class="time-limit-stats-container d-flex justify-content-between align-items-center">
+                            <div class="time-limit-stat-item">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3281/3281289.png" class="time-limit-stat-icon" alt="Tasks">
+                                <span>28 Tasks</span>
+                            </div>
+                            <div class="time-limit-stat-item">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="time-limit-stat-icon" alt="Rating">
+                                <span>4.7 (490 Reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="time-limit-card card p-3">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-start">
+                                <img src="https://randomuser.me/api/portraits/women/63.jpg" class="rounded-circle time-limit-profile-img me-3" alt="Emily Chen">
+                                <div class="time-limit-profile-info">
+                                    <h6 class="time-limit-profile-name mb-0">Emily Chen</h6>
+                                    <small class="time-limit-profile-title text-muted d-block">Web Developer</small>
+                                    <p class="time-limit-profile-desc mb-0">Lorem ipsum dolor sit amet consectetur...</p>
+                                </div>
+                            </div>
+                            <span class="time-limit-follow-status">Followed</span>
+                        </div>
+                        <div class="time-limit-stats-container d-flex justify-content-between align-items-center">
+                            <div class="time-limit-stat-item">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3281/3281289.png" class="time-limit-stat-icon" alt="Tasks">
+                                <span>32 Tasks</span>
+                            </div>
+                            <div class="time-limit-stat-item">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="time-limit-stat-icon" alt="Rating">
+                                <span>4.8 (510 Reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 5 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="time-limit-card card p-3">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-start">
+                                <img src="https://randomuser.me/api/portraits/men/41.jpg" class="rounded-circle time-limit-profile-img me-3" alt="Michael Brown">
+                                <div class="time-limit-profile-info">
+                                    <h6 class="time-limit-profile-name mb-0">Michael Brown</h6>
+                                    <small class="time-limit-profile-title text-muted d-block">Graphic Designer</small>
+                                    <p class="time-limit-profile-desc mb-0">Lorem ipsum dolor sit amet consectetur...</p>
+                                </div>
+                            </div>
+                            <span class="time-limit-follow-status">Followed</span>
+                        </div>
+                        <div class="time-limit-stats-container d-flex justify-content-between align-items-center">
+                            <div class="time-limit-stat-item">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3281/3281289.png" class="time-limit-stat-icon" alt="Tasks">
+                                <span>25 Tasks</span>
+                            </div>
+                            <div class="time-limit-stat-item">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="time-limit-stat-icon" alt="Rating">
+                                <span>4.6 (420 Reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 6 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="time-limit-card card p-3">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-start">
+                                <img src="https://randomuser.me/api/portraits/women/33.jpg" class="rounded-circle time-limit-profile-img me-3" alt="Lisa Wang">
+                                <div class="time-limit-profile-info">
+                                    <h6 class="time-limit-profile-name mb-0">Lisa Wang</h6>
+                                    <small class="time-limit-profile-title text-muted d-block">Frontend Expert</small>
+                                    <p class="time-limit-profile-desc mb-0">Lorem ipsum dolor sit amet consectetur...</p>
+                                </div>
+                            </div>
+                            <span class="time-limit-follow-status">Followed</span>
+                        </div>
+                        <div class="time-limit-stats-container d-flex justify-content-between align-items-center">
+                            <div class="time-limit-stat-item">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3281/3281289.png" class="time-limit-stat-icon" alt="Tasks">
+                                <span>38 Tasks</span>
+                            </div>
+                            <div class="time-limit-stat-item">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="time-limit-stat-icon" alt="Rating">
+                                <span>4.9 (600 Reviews)</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+          </div>
+        </div>
+      </div>
+    </div>
         <!-- ============================  js ============================== -->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/carousel-task.js"></script>
+    <script src="js/carousel-mentors.js"></script>
+    <script src="js/carousel-corse-home .js"></script>
+    <script src="js/carousel-acc-home.js"></script>
         <script src="js/main.js"></script>
     </body>
- 
