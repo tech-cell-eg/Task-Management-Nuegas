@@ -246,7 +246,7 @@ class MyCarouselTimeLimit extends HTMLElement {
   connectedCallback() {
     const styleLink = document.createElement("link");
     styleLink.rel = "stylesheet";
-    styleLink.href = "css/carousel-task.css";
+    styleLink.href = "../css/task.css";
     document.head.appendChild(styleLink);
 
     this.innerHTML = `
