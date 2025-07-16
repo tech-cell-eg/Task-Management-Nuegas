@@ -5,62 +5,71 @@ class MyCarouselCorseHome extends HTMLElement {
     styleLink.href = "css/carousel-corse.css";
     document.head.appendChild(styleLink);
     this.innerHTML = `
-<section class="main-card px-3">
-  <div id="carouselExampleFade" class="carousel slide carousel-fade carousel-wrapper mx-auto">
+<section class="project-portfolio">
+  <div id="portfolioCarousel" class="portfolio-slider carousel slide carousel-fade">
     <div class="carousel-inner">
 
+      <!-- Slide 1 -->
       <div class="carousel-item active">
-        <div class="row justify-content-center g-2">
-          <div class="col-12 col-sm-6 col-md-4 col-lg-6">
-            <div class="card custom-card">
-              <img src="images/pc.jpg" class="card-img-top" alt="profile1" />
-              <div class="card-body">
-                <h5 class="card-title">Creating Perfect Website</h5>
-                <p class="card-text">Web Developer</p>
-                <div class="mb-2 d-flex justify-content-between align-items-center">
-                  <small class="text-muted">Progress</small>
-                  <small class="text-primary fw-semibold">85%</small>
-                </div>
-                <div class="progress mb-3" style="height: 6px;">
-                  <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="75"
-                    aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="d-flex align-items-center gap-1">
-                    <img src="images/clock icon.png" class="icon-dark" width="20" alt="clock">
-                    <small class="text-muted">4 Days Left</small>
+        <div class="portfolio-grid">
+          <!-- Card 1 -->
+          <div class="portfolio-card__container">
+            <div class="portfolio-item">
+              <img src="images/pc.jpg" class="portfolio-item__thumbnail" alt="Web Design Project" />
+              <div class="portfolio-item__details">
+                <h3 class="portfolio-item__heading">Creating Perfect Website</h3>
+                <p class="portfolio-item__tag">Web Developer</p>
+                
+                <div class="portfolio-item__status">
+                  <div class="status-info">
+                    <span class="status-label">Progress</span>
+                    <span class="status-percentage text-primary">85%</span>
                   </div>
-                  <div class="avatar-group">
-                    <img src="images/profile1.png" class="rounded-circle avatar-corse" />
-                    <img src="images/profile2.jpg" class="rounded-circle avatar-corse" />
+                  <div class="status-bar ">
+                    <div class="status-progress bg-primary" style="width: 85%;"></div>
+                  </div>
+                </div>
+                
+                <div class="portfolio-item__meta">
+                  <div class="deadline-indicator">
+                    <img src="images/clock icon.png" class="deadline-icon" alt="Deadline" width="20">
+                    <span class="deadline-text">4 Days Left</span>
+                  </div>
+                  <div class="team-members">
+                    <img src="images/profile1.png" class="team-avatar" alt="Team Member" />
+                    <img src="images/profile2.jpg" class="team-avatar" alt="Team Member" />
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-12 col-sm-6 col-md-4 col-lg-6">
-            <div class="card custom-card">
-              <img src="images/pc1.jpg" class="card-img-top" alt="profile1" />
-              <div class="card-body">
-                <h5 class="card-title">Creating Mobile App Design</h5>
-                <p class="card-text">UI UX Design</p>
-                <div class="mb-2 d-flex justify-content-between align-items-center">
-                  <small class="text-muted">Progress</small>
-                  <small class="text-primary fw-semibold">75%</small>
-                </div>
-                <div class="progress mb-3" style="height: 6px;">
-                  <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="75"
-                    aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="d-flex align-items-center gap-1">
-                    <img src="images/clock icon.png" class="icon-dark" width="20" alt="clock">
-                    <small class="text-muted">3 Days Left</small>
+          <!-- Card 2 -->
+          <div class="portfolio-card__container">
+            <div class="portfolio-item">
+              <img src="images/pc1.jpg" class="portfolio-item__thumbnail" alt="Mobile App Design" />
+              <div class="portfolio-item__details">
+                <h3 class="portfolio-item__heading">Creating Mobile App Design</h3>
+                <p class="portfolio-item__tag">UI UX Design</p>
+                
+                <div class="portfolio-item__status">
+                  <div class="status-info">
+                    <span class="status-label">Progress</span>
+                    <span class="status-percentage text-primary">75%</span>
                   </div>
-                  <div class="avatar-group">
-                    <img src="images/profile1.png" class="rounded-circle avatar-corse" />
-                    <img src="images/profile2.jpg" class="rounded-circle avatar-corse" />
+                  <div class="status-bar">
+                    <div class="status-progress bg-primary" style="width: 75%;"></div>
+                  </div>
+                </div>
+                
+                <div class="portfolio-item__meta">
+                  <div class="deadline-indicator">
+                    <img src="images/clock icon.png" class="deadline-icon" alt="Deadline" width="20">
+                    <span class="deadline-text">3 Days Left</span>
+                  </div>
+                  <div class="team-members">
+                    <img src="images/profile1.png" class="team-avatar" alt="Team Member" />
+                    <img src="images/profile2.jpg" class="team-avatar" alt="Team Member" />
                   </div>
                 </div>
               </div>
@@ -69,58 +78,67 @@ class MyCarouselCorseHome extends HTMLElement {
         </div>
       </div>
 
+      <!-- Slide 2 -->
       <div class="carousel-item">
-        <div class="row justify-content-center g-2">
-          <div class="col-12 col-sm-6 col-md-4 col-lg-6">
-            <div class="card custom-card">
-              <img src="images/pc2.jpg" class="card-img-top" alt="profile1" />
-              <div class="card-body">
-                <h5 class="card-title">Creating Mobile App Design</h5>
-                <p class="card-text">UI UX Design</p>
-                <div class="mb-2 d-flex justify-content-between align-items-center">
-                  <small class="text-muted">Progress</small>
-                  <small class="text-primary fw-semibold">75%</small>
-                </div>
-                <div class="progress mb-3" style="height: 6px;">
-                  <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="75"
-                    aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="d-flex align-items-center gap-1">
-                    <img src="images/clock icon.png" class="icon-dark" width="20" alt="clock">
-                    <small class="text-muted">2 Days Left</small>
+        <div class="portfolio-grid">
+          <!-- Card 3 -->
+          <div class="portfolio-card__container">
+            <div class="portfolio-item">
+              <img src="images/pc2.jpg" class="portfolio-item__thumbnail" alt="Mobile App Design" />
+              <div class="portfolio-item__details">
+                <h3 class="portfolio-item__heading">Creating Mobile App Design</h3>
+                <p class="portfolio-item__tag">UI UX Design</p>
+                
+                <div class="portfolio-item__status">
+                  <div class="status-info">
+                    <span class="status-label">Progress</span>
+                    <span class="status-percentage text-primary ">75%</span>
                   </div>
-                  <div class="avatar-group">
-                    <img src="images/profile1.png" class="rounded-circle avatar-corse" />
-                    <img src="images/profile2.jpg" class="rounded-circle avatar-corse" />
+                  <div class="status-bar">
+                    <div class="status-progress bg-primary" style="width: 75%;"></div>
+                  </div>
+                </div>
+                
+                <div class="portfolio-item__meta">
+                  <div class="deadline-indicator">
+                    <img src="images/clock icon.png" class="deadline-icon" alt="Deadline" width="20">
+                    <span class="deadline-text">2 Days Left</span>
+                  </div>
+                  <div class="team-members">
+                    <img src="images/profile1.png" class="team-avatar" alt="Team Member" />
+                    <img src="images/profile2.jpg" class="team-avatar" alt="Team Member" />
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-12 col-sm-6 col-md-4 col-lg-6">
-            <div class="card custom-card">
-              <img src="images/pc3.jpg" class="card-img-top" alt="profile1" />
-              <div class="card-body">
-                <h5 class="card-title">Creating Awesome Mobile Apps</h5>
-                <p class="card-text">UI UX Design</p>
-                <div class="mb-2 d-flex justify-content-between align-items-center">
-                  <small class="text-muted">Progress</small>
-                  <small class="text-primary fw-semibold">75%</small>
-                </div>
-                <div class="progress mb-3" style="height: 6px;">
-                  <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="75"
-                    aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="d-flex align-items-center gap-1">
-                    <img src="images/clock icon.png" class="icon-dark" width="20" alt="clock">
-                    <small class="text-muted">1 Day Left</small>
+          <!-- Card 4 -->
+          <div class="portfolio-card__container">
+            <div class="portfolio-item">
+              <img src="images/pc3.jpg" class="portfolio-item__thumbnail" alt="Mobile App Development" />
+              <div class="portfolio-item__details">
+                <h3 class="portfolio-item__heading">Creating Awesome Mobile Apps</h3>
+                <p class="portfolio-item__tag">UI UX Design</p>
+                
+                <div class="portfolio-item__status">
+                  <div class="status-info">
+                    <span class="status-label">Progress</span>
+                    <span class="status-percentage text-primary">75%</span>
                   </div>
-                  <div class="avatar-group">
-                    <img src="images/profile1.png" class="rounded-circle avatar-corse" />
-                    <img src="images/profile2.jpg" class="rounded-circle avatar-corse" />
+                  <div class="status-bar">
+                    <div class="status-progress bg-primary" style="width: 75%;"></div>
+                  </div>
+                </div>
+                
+                <div class="portfolio-item__meta">
+                  <div class="deadline-indicator">
+                    <img src="images/clock icon.png" class="deadline-icon" alt="Deadline" width="20">
+                    <span class="deadline-text">1 Day Left</span>
+                  </div>
+                  <div class="team-members">
+                    <img src="images/profile1.png" class="team-avatar" alt="Team Member" />
+                    <img src="images/profile2.jpg" class="team-avatar" alt="Team Member" />
                   </div>
                 </div>
               </div>
@@ -128,18 +146,15 @@ class MyCarouselCorseHome extends HTMLElement {
           </div>
         </div>
       </div>
-
     </div>
 
-    <!-- Arrows -->
-    <button class="carousel-control-prev custom-arrow" type="button" data-bs-target="#carouselExampleFade"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
+    <!-- Navigation Controls -->
+    <button class="slider-nav slider-nav--prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+      <span class="nav-arrow"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next custom-arrow" type="button" data-bs-target="#carouselExampleFade"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
+    <button class="slider-nav slider-nav--next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+      <span class="nav-arrow"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
